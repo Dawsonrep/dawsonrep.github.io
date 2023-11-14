@@ -22,13 +22,18 @@
 14. Chroot into Arch using `arch-chroot /mnt`
 15. Install nano using `pacman -Sy nano`
 16. Create `locale.conf` and add the line "LANG=en_US.UTF-8"
-17. Create a hostname file and add the hostname
-18. Create a new initramfs using `mkinitcpio -P`
-19. Set the root password using `passwd`
-20. Change the type of `/dev/sda1` from Linux to EFI using `parted`
-21. Format `/dev/sda1` using `mkfs.ext4 /dev/sda1`
-22. Make the grub config file using `grub-mkconfig -o /boot/grub/grub.cfg`
-23. Install LXDE using `pacman -S lxde`
-24. Create users for `codi` and `dawson` with sudo permissions
-25. Install zsh and ssh using `pacman`
-26. Add color coding using `PS1='\[\e[1;34m\]\u\[\e[0m\]@\[\e[1;32m\]\h:\[\e[1;36m\]\w\[\e[0m\]\$ '`
+17. Generate Locales using "locale-gen"
+18. Move this file into the etc directory using "mv locale.conf /etc"
+19. Create a hostname file and add the hostname
+20. Move this file into the etc directory using "mv hostname /etc"
+21. Create a new initramfs using `mkinitcpio -P`
+22. Set the root password using `passwd`
+23. Change the type of `/dev/sda1` from Linux to EFI using `parted`
+24. Format `/dev/sda1` using `mkfs.ext4 /dev/sda1`
+25. Install efibootmgr using "pacman -S efibootmgr"
+26. Make the grub config file using `grub-mkconfig -o /boot/grub/grub.cfg`
+27. Install LXDE using `pacman -S lxde`
+28. Install sudo
+29. Create users for `codi` and `dawson` with sudo permissions
+30. Install zsh and ssh using `pacman`
+31. Add color coding using `PS1='\[\e[1;34m\]\u\[\e[0m\]@\[\e[1;32m\]\h:\[\e[1;36m\]\w\[\e[0m\]\$ '`
