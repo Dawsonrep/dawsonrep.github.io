@@ -33,7 +33,15 @@
 25. Install efibootmgr using "pacman -S efibootmgr"
 26. Make the grub config file using `grub-mkconfig -o /boot/grub/grub.cfg`
 27. Install LXDE using `pacman -S lxde`
-28. Install sudo
-29. Create users for `codi` and `dawson` with sudo permissions
-30. Install zsh and ssh using `pacman`
-31. Add color coding using `PS1='\[\e[1;34m\]\u\[\e[0m\]@\[\e[1;32m\]\h:\[\e[1;36m\]\w\[\e[0m\]\$ '`
+28. Install sudo using "pacman -S sudo"
+29. Install zsh and ssh using `pacman`
+30. Exit the terminal and shutdown
+31. Log in to arch linux with the root user
+32. Enable NetworkManager using "Systemctl enable NetworkManager"
+33. Type "Startx" in the terminal
+34. Create a user for yourself and for Codi
+35. Install visudo using "pacman -S vi"
+36. Use "sudo visudo" and uncomment the line to allow members of group sudo to execute any command
+37. Give the users sudo privliledges with "usermod"
+38. Write "zsh" to the .bashrc file
+39. Install a DE using "pacman -S firefox"
